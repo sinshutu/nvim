@@ -47,3 +47,6 @@ set foldopen=block,hor,mark,percent,quickfix,search,tag,undo
 
 "保存時に文末の空白を削除
 autocmd BufWritePre * :%s/\s\+$//ge
+
+"golang
+exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")

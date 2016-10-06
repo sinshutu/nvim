@@ -39,3 +39,10 @@ repo = 'Shougo/context_filetype.vim'
 repo = 'mattn/emmet-vim'
 on_ft = 'html'
 
+#golang
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = 'go'
+hook_add = '''
+set rtp+=/home/suzuki/src/github.com/nsf/gocode/vim
+'''
