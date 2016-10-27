@@ -99,4 +99,15 @@ function! s:setScalaOnly()
 	set smartindent
 endfunction
 
+" Ruby
+autocmd MyAutoCmd FileType ruby call s:setPythonOnly()
+function! s:setPythonOnly()
+	set expandtab
+	set tabstop=2
+	set shiftwidth=2
+	set softtabstop=2
+	set autoindent
+	set colorcolumn=80
+endfunction
+
 au FileType qf nnoremap <silent><buffer>q :quit<CR>
