@@ -93,7 +93,7 @@ repo = 'tpope/vim-surround'
 
 [[plugins]]
 repo = 'rcmdnk/vim-markdown'
-on_ft = ['markdown','mkd']
+on_ft = ['markdown','md']
 hook_add = '''
 	let g:vim_markdown_frontmatter = 1
 	let g:vim_markdown_math = 1
