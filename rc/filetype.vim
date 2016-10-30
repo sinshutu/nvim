@@ -100,8 +100,9 @@ function! s:setScalaOnly()
 endfunction
 
 " Ruby
-autocmd MyAutoCmd FileType ruby call s:setPythonOnly()
-function! s:setPythonOnly()
+autocmd MyAutoCmd BufRead,BufNewFile *.{ru,rb} set filetype=ruby
+autocmd MyAutoCmd FileType ruby call s:setRubyOnly()
+function! s:setRubyOnly()
 	set expandtab
 	set tabstop=2
 	set shiftwidth=2
