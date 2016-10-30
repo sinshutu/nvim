@@ -18,19 +18,29 @@ hook_add = '''
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
 on_event = 'InsertCharPre'
-hook_add = 'let g:deoplete#enable_at_startup = 1'
+hook_source = '''
+  let g:deoplete#enable_at_startup = 1
+  inoremap <expr><tab> pumvisible() ? "\<C-n>" :
+        \ neosnippet#expandable_or_jumpable() ?
+        \    "\<Plug>(neosnippet_expand_or_jump)" : "\<tab>"
+'''
+on_i = 1
 
 [[plugins]]
 repo = 'Shougo/neosnippet.vim'
+hook_source = '''
+  imap <C-k> <Plug>(neosnippet_expand_or_jump)
+  smap <C-k> <Plug>(neosnippet_expand_or_jump)
+  xmap <C-k> <Plug>(neosnippet_expand_target)
+  let g:neosnippet#snippets_directory = '.config/nvim/snippets/,.config/nvim/repo/github.com/Shougo/neosnippet-snippets/neosnippets'
+  if has('conceal')
+    set conceallevel=2 concealcursor=niv
+  endif
+'''
 depends = ['neosnippet-snippets', 'context_filetype.vim']
 on_event = 'InsertCharPre'
 on_ft = 'snippet'
-hook_add = '''
-  imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-  smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-  xmap <C-k>     <Plug>(neosnippet_expand_target)
-  let g:neosnippet#snippets_directory = '.config/nvim/snippets/,.config/nvim/repo/github.com/Shougo/neosnippet-snippets/neosnippets'
-'''
+on_i  = 1
 
 [[plugins]]
 repo = 'Shougo/context_filetype.vim'
