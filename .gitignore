@@ -3,6 +3,7 @@
 repos/
 rollbacks/
 temp/
+.cache/
 .netrwhist
 merged
 cache_nvim
