@@ -40,9 +40,9 @@ autocmd MyAutoCmd FileType javascript call s:setJavascriptOnly()
 function! s:setJavascriptOnly()
 	set foldlevel=1
 	set foldnestmax=99
-	set tabstop=4
-	set shiftwidth=4
-	set softtabstop=4
+	set tabstop=2
+	set shiftwidth=2
+	set softtabstop=2
 	set autoindent
 endfunction
 
