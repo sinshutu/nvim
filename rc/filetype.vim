@@ -111,4 +111,15 @@ function! s:setRubyOnly()
 	set colorcolumn=80
 endfunction
 
+" Vue
+autocmd MyAutoCmd FileType vue.html.javascript.css call s:setVueOnly()
+autocmd MyAutoCmd FileType ruby call s:setVueOnly()
+function! s:setVueOnly()
+	set expandtab
+	set tabstop=2
+	set shiftwidth=2
+	set softtabstop=2
+	set autoindent
+endfunction
+
 au FileType qf nnoremap <silent><buffer>q :quit<CR>
