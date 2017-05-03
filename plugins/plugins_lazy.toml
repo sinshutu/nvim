@@ -82,6 +82,10 @@ on_ft = 'haskell'
 repo = 'ujihisa/neco-ghc'
 on_ft = 'haskell'
 
+[[plugins]]
+repo = 'itchyny/vim-haskell-indent'
+on_ft = 'haskell'
+
 # ruby
 [[plugins]]
 repo = 'osyo-manga/vim-monster'
