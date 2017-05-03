@@ -110,6 +110,7 @@ vmap <Enter> <Plug>(EasyAlign)
 repo = 'scrooloose/syntastic'
 hook_add = '''
     let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+    let g:syntastic_javascript_checkers=['eslint', 'eslint-plugin-vue']
     "let g:syntastic_ruby_checkers = ['rubocop']
 '''
 

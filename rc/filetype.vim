@@ -112,7 +112,7 @@ function! s:setRubyOnly()
 endfunction
 
 " Vue
-autocmd MyAutoCmd FileType vue.html.javascript.css call s:setVueOnly()
+autocmd MyAutoCmd FileType vue call s:setVueOnly()
 autocmd MyAutoCmd FileType ruby call s:setVueOnly()
 function! s:setVueOnly()
 	set expandtab

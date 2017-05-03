@@ -103,3 +103,8 @@ on_ft = 'rust'
 [[plugins]]
 repo = 'sebastianmarkow/deoplete-rust'
 on_ft = 'rust'
+
+# vue
+[[plugins]]
+repo = 'posva/vim-vue'
+on_ft = ['js', 'vue']
