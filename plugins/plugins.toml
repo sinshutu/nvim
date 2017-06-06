@@ -52,6 +52,9 @@ add_hook = '''
 '''
 [[plugins]]
 repo = 'soramugi/auto-ctags.vim'
+hook_add='''
+    let g:auto_ctags = 1
+'''
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
