@@ -75,12 +75,16 @@ set rtp+=/home/suzuki/src/github.com/nsf/gocode/vim
 
 #haskell
 [[plugins]]
-repo = 'kana/vim-filetype-haskell'
+repo = 'neovimhaskell/haskell-vim'
 on_ft = 'haskell'
 
 [[plugins]]
 repo = 'ujihisa/neco-ghc'
 on_ft = 'haskell'
+hook_add = '''
+  let g:haskellmode_completion_ghc = 0
+  autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+'''
 
 [[plugins]]
 repo = 'itchyny/vim-haskell-indent'
