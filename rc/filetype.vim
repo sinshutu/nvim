@@ -113,7 +113,6 @@ endfunction
 
 " Vue
 autocmd MyAutoCmd FileType vue call s:setVueOnly()
-autocmd MyAutoCmd FileType ruby call s:setVueOnly()
 function! s:setVueOnly()
 	set expandtab
 	set tabstop=2
