@@ -1,8 +1,3 @@
-"q でquickfixを閉じれるようにする。
-let g:quickrun_no_default_key_mappings = 1
-nnoremap \r :write<CR>:QuickRun -mode n<CR>
-xnoremap \r :<C-U>write<CR>gv:QuickRun -mode v<CR>
-
 "\r で保存してからquickrunを実行する。
 let g:quickrun_no_default_key_mappings = 1
 nnoremap \r :cclose<CR>:write<CR>:QuickRun -mode n<CR>
@@ -13,3 +8,7 @@ nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() 
 
 "ノーマルモードでF6で日付挿入
 nmap <F6> <ESC>i<C-R>=strftime("%Y/%m/%d")<CR><CR>
+
+"
+nmap <silent> <C-k> :cp<CR>
+nmap <silent> <C-j> :cn<CR>
