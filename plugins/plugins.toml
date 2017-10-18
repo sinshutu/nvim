@@ -97,6 +97,13 @@ hook_add = '''
 	let g:vim_markdown_frontmatter = 1
 	let g:vim_markdown_math = 1
 '''
+# json syntax
+[[plugins]]
+repo = 'elzr/vim-json'
+on_ft = 'json'
+hook_add = '''
+	let g:vim_json_syntax_conceal = 0
+'''
 
 [[plugins]] # toml syntax
 repo = 'cespare/vim-toml'
@@ -134,4 +141,3 @@ hook_add = '''
 repo = 'tomtom/tcomment_vim'
 hook_add = '''
 '''
-
