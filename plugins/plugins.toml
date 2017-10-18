@@ -68,9 +68,6 @@ hook_add = '''
 repo = 'vim-jp/vimdoc-ja'
 
 [[plugins]]
-repo = 'rhysd/committia.vim'
-
-[[plugins]]
 repo = 'Lokaltog/vim-easymotion'
 hook_add = '''
 	map <Space>l <Plug>(easymotion-lineforward)
@@ -93,6 +90,9 @@ repo = 'junegunn/vim-easy-align'
 hook_add = '''
 vmap <Enter> <Plug>(EasyAlign)
 '''
+
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
 
 # lint
 [[plugins]]
@@ -124,5 +124,10 @@ let g:test#strategy = 'dispatch'
 
 # git
 [[plugins]]
-repo = 'tomtom/tcomment_vim'
+repo = 'rhysd/committia.vim'
 
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
