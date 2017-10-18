@@ -54,6 +54,11 @@ function! s:setTexOnly()
 	set shiftwidth=2
 	set softtabstop=2
 endfunction
+augroup texfile
+  autocmd BufRead,BufNewFile *.tex set filetype=tex
+  let md_to_latex  = "pandoc --from=markdown --to=latex"
+  autocmd Filetype tex let &formatprg=md_to_latex
+augroup END
 
 " java
 autocmd MyAutoCmd FileType java call s:setJavaOnly()
