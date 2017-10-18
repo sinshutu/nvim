@@ -60,12 +60,16 @@ on_ft = 'html'
 
 # python
 [[plugins]]
-on_ft = '[python,cython]'
 repo = 'zchee/deoplete-jedi'
+on_ft = '[python,cython]'
 
 [[plugins]]
-on_ft = '[python,cython]'
 repo = 'davidhalter/jedi-vim'
+on_ft = '[python,cython]'
+
+[[plugins]]
+repo = 'Vimjas/vim-python-pep8-indent'
+on_ft = '[python,cython]'
 
 # golang
 [[plugins]]

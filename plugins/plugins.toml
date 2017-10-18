@@ -94,6 +94,7 @@ hook_add = '''
 vmap <Enter> <Plug>(EasyAlign)
 '''
 
+# lint
 [[plugins]]
 repo = 'w0rp/ale'
 hook_add = '''
@@ -110,5 +111,18 @@ hook_add = '''
     nmap <silent> <C-n> <Plug>(ale_next_wrap)
 '''
 
+# test
+[[plugins]]
+repo = 'tpope/vim-dispatch'
+
+[[plugins]]
+repo = 'janko-m/vim-test'
+depends = ['vim-dispatch']
+hook_add = '''
+let g:test#strategy = 'dispatch'
+'''
+
+# git
 [[plugins]]
 repo = 'tomtom/tcomment_vim'
+
