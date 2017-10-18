@@ -35,14 +35,6 @@ hook_source = '''
 on_i = 1
 
 [[plugins]]
-on_ft = '[python,cython]'
-repo = 'zchee/deoplete-jedi'
-
-[[plugins]]
-on_ft = '[python,cython]'
-repo = 'davidhalter/jedi-vim'
-
-[[plugins]]
 repo = 'Shougo/neosnippet.vim'
 hook_source = '''
   imap <C-k> <Plug>(neosnippet_expand_or_jump)
@@ -61,11 +53,21 @@ on_i  = 1
 [[plugins]]
 repo = 'Shougo/context_filetype.vim'
 
+# html
 [[plugins]]
 repo = 'mattn/emmet-vim'
 on_ft = 'html'
 
-#golang
+# python
+[[plugins]]
+on_ft = '[python,cython]'
+repo = 'zchee/deoplete-jedi'
+
+[[plugins]]
+on_ft = '[python,cython]'
+repo = 'davidhalter/jedi-vim'
+
+# golang
 [[plugins]]
 repo = 'fatih/vim-go'
 on_ft = 'go'
@@ -73,7 +75,17 @@ hook_add = '''
 set rtp+=/home/suzuki/src/github.com/nsf/gocode/vim
 '''
 
-#haskell
+# javascript
+[[plugins]]
+repo = 'mxw/vim-jsx'
+on_ft = 'javascript'
+
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+on_ft = 'javascript'
+
+
+# haskell
 [[plugins]]
 repo = 'neovimhaskell/haskell-vim'
 on_ft = 'haskell'
@@ -112,3 +124,25 @@ on_ft = 'rust'
 [[plugins]]
 repo = 'posva/vim-vue'
 on_ft = ['js', 'vue']
+
+# json syntax
+[[plugins]]
+repo = 'elzr/vim-json'
+on_ft = 'json'
+hook_add = '''
+	let g:vim_json_syntax_conceal = 0
+'''
+
+[[plugins]] # toml syntax
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+# markdown
+[[plugins]]
+repo = 'rcmdnk/vim-markdown'
+on_ft = ['markdown','md']
+hook_add = '''
+	let g:vim_markdown_frontmatter = 1
+	let g:vim_markdown_math = 1
+'''
+
