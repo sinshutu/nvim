@@ -3,7 +3,6 @@ set notitle
 set noswapfile
 set wrap
 
-set autoindent
 set number
 
 set clipboard=unnamedplus
@@ -11,9 +10,7 @@ set clipboard=unnamedplus
 set foldmethod=manual
 
 set shiftwidth=4
-set tabstop=4
 
-set expandtab
 set incsearch
 set nohlsearch
 set ignorecase
