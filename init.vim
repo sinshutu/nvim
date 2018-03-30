@@ -10,6 +10,10 @@ set runtimepath+=~/.config/nvim/./repos/github.com/Shougo/dein.vim
 " Load Plugins:
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
+
+  " Local Plugins:
+  " call dein#local('~/src/github.com/sinshutu', {}, ['markdown.vim'])
+
   let g:rc_dir    = expand("~/.config/nvim/")
   let s:toml      = s:dein_dir . '/plugins/plugins.toml'
   let s:lazy_toml = s:dein_dir . '/plugins/plugins_lazy.toml'
