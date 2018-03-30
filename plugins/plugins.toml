@@ -74,6 +74,8 @@ hook_add = '''
 	map <Space>j <Plug>(easymotion-j)
 	map <Space>k <Plug>(easymotion-k)
 	map <Space>h <Plug>(easymotion-linebackward)
+	map <Space>w <Plug>(easymotion-bd-f)
+	nmap <Space>w <Plug>(easymotion-overwin-f)
 '''
 
 [[plugins]]
