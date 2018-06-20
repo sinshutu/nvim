@@ -122,6 +122,9 @@ hook_add = '''
     \   'tex': ['textlint'],
     \   'markdown': ['textlint'],
     \}
+    let b:ale_linters = {
+    \ 'html': ['textlint'],
+    \}
     let g:ale_statusline_format = ['E%d', 'W%d', 'ok']
     let g:ale_set_loclist = 0
     let g:ale_set_quickfix = 1
