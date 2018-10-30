@@ -20,7 +20,7 @@ repo = 'Shougo/deoplete.nvim'
 on_event = 'InsertCharPre'
 hook_source = '''
   let g:deoplete#enable_at_startup = 1
-  let g:deoplete#auto_complete_delay = 0
+  let g:deoplete#auto_complete_delay = 200
   let g:deoplete#auto_complete_start_length = 1
   let g:deoplete#enable_camel_case = 0
   let g:deoplete#enable_ignore_case = 0
@@ -133,6 +133,14 @@ on_ft = 'rust'
 repo = 'posva/vim-vue'
 on_ft = ['js', 'vue']
 
+[[plugins]]
+repo = 'Quramy/tsuquyomi'
+on_ft = ['js', 'vue']
+
+[[plugins]]
+repo = 'Quramy/tsuquyomi-vue'
+on_ft = ['js', 'vue']
+
 # json syntax
 [[plugins]]
 repo = 'elzr/vim-json'
@@ -154,3 +162,10 @@ hook_add = '''
     let g:vim_markdown_math = 1
 '''
 
+# terraform
+[[plugins]]
+repo = 'hashivim/vim-terraform'
+on_ft = ['tf']
+hook_add = '''
+    let g:terraform_align=1
+'''

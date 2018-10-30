@@ -80,6 +80,7 @@ function! s:setMarkdownOnly()
   set shiftwidth=2
   set softtabstop=2
   set formatoptions+=or
+  set conceallevel=0
 endfunction
 
 " shell script
@@ -115,6 +116,7 @@ function! s:setRubyOnly()
 endfunction
 
 " Vue
+autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
 autocmd MyAutoCmd FileType vue call s:setVueOnly()
 function! s:setVueOnly()
   set expandtab
@@ -122,7 +124,7 @@ function! s:setVueOnly()
   set shiftwidth=2
   set softtabstop=2
   set autoindent
-  setlocal filetype=vue.html.javascript.css
+  syntax sync fromstart
 endfunction
 
 au FileType qf nnoremap <silent><buffer>q :quit<CR>
