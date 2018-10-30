@@ -29,9 +29,6 @@ hook_post_source = '''
 '''
 
 [[plugins]]
-repo = 'hail2u/vim-css3-syntax'
-
-[[plugins]]
 repo = 'Shougo/neocomplcache'
 add_hook = '''
   let g:acp_enableAtStartup = 0
@@ -42,11 +39,6 @@ add_hook = '''
     \ 'default' : ''
   \ }
 '''
-# [[plugins]]
-# repo = 'soramugi/auto-ctags.vim'
-# hook_add='''
-#     let g:auto_ctags = 1
-# '''
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
@@ -95,12 +87,6 @@ hook_add = '''
 
 [[plugins]]
 repo = 'tpope/vim-surround'
-
-[[plugins]]
-repo = 'Shougo/neosnippet-snippets'
-
-[[plugins]]
-repo = 'AndrewRadev/splitjoin.vim'
 
 [[plugins]]
 repo = 'junegunn/vim-easy-align'

@@ -72,21 +72,17 @@ repo = 'Vimjas/vim-python-pep8-indent'
 on_ft = '[python,cython]'
 
 # golang
-[[plugins]]
-repo = 'fatih/vim-go'
-on_ft = 'go'
-hook_add = '''
-set rtp+=/home/suzuki/src/github.com/nsf/gocode/vim
-'''
+# [[plugins]]
+# repo = 'fatih/vim-go'
+# on_ft = 'go'
+# hook_add = '''
+# set rtp+=/home/suzuki/src/github.com/nsf/gocode/vim
+# '''
 
 # javascript
-[[plugins]]
-repo = 'mxw/vim-jsx'
-on_ft = 'javascript'
-
-[[plugins]]
-repo = 'pangloss/vim-javascript'
-on_ft = 'javascript'
+# [[plugins]]
+# repo = 'pangloss/vim-javascript'
+# on_ft = 'javascript'
 
 # typescript
 [[plugins]]
@@ -94,26 +90,26 @@ repo = 'leafgarland/typescript-vim'
 on_ft = 'typescript'
 
 # haskell
-[[plugins]]
-repo = 'neovimhaskell/haskell-vim'
-on_ft = 'haskell'
-
-[[plugins]]
-repo = 'ujihisa/neco-ghc'
-on_ft = 'haskell'
-hook_add = '''
-  let g:haskellmode_completion_ghc = 0
-  autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
-'''
-
-[[plugins]]
-repo = 'itchyny/vim-haskell-indent'
-on_ft = 'haskell'
+# [[plugins]]
+# repo = 'neovimhaskell/haskell-vim'
+# on_ft = 'haskell'
+#
+# [[plugins]]
+# repo = 'ujihisa/neco-ghc'
+# on_ft = 'haskell'
+# hook_add = '''
+#   let g:haskellmode_completion_ghc = 0
+#   autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+# '''
+#
+# [[plugins]]
+# repo = 'itchyny/vim-haskell-indent'
+# on_ft = 'haskell'
 
 # ruby
-[[plugins]]
-repo = 'osyo-manga/vim-monster'
-on_ft = 'ruby'
+# [[plugins]]
+# repo = 'osyo-manga/vim-monster'
+# on_ft = 'ruby'
 
 # [[plugins]]
 # repo = 'vim-rails'
