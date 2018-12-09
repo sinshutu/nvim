@@ -36,19 +36,13 @@ on_i = 1
 
 [[plugins]]
 repo = 'Shougo/neosnippet.vim'
-hook_source = '''
-  imap <C-k> <Plug>(neosnippet_expand_or_jump)
-  smap <C-k> <Plug>(neosnippet_expand_or_jump)
-  xmap <C-k> <Plug>(neosnippet_expand_target)
-  let g:neosnippet#snippets_directory = '~/.config/nvim/repo/github.com/Shougo/neosnippet-snippets/neosnippets,~/.config/nvim/snippets/'
-  if has('conceal')
-    set conceallevel=2 concealcursor=niv
-  endif
-'''
 depends = ['neosnippet-snippets', 'context_filetype.vim']
 on_event = 'InsertCharPre'
 on_ft = 'snippet'
 on_i  = 1
+hook_source = '''
+source ~/.config/nvim/plugins/neosnippet.rc.vim
+'''
 
 [[plugins]]
 repo = 'Shougo/context_filetype.vim'
@@ -78,16 +72,6 @@ on_ft = '[python,cython]'
 # hook_add = '''
 # set rtp+=/home/suzuki/src/github.com/nsf/gocode/vim
 # '''
-
-# javascript
-# [[plugins]]
-# repo = 'pangloss/vim-javascript'
-# on_ft = 'javascript'
-
-# typescript
-[[plugins]]
-repo = 'leafgarland/typescript-vim'
-on_ft = 'typescript'
 
 # haskell
 # [[plugins]]
@@ -125,10 +109,6 @@ repo = 'sebastianmarkow/deoplete-rust'
 on_ft = 'rust'
 
 # vue
-[[plugins]]
-repo = 'posva/vim-vue'
-on_ft = ['js', 'vue']
-
 [[plugins]]
 repo = 'Quramy/tsuquyomi'
 on_ft = ['js', 'vue']
