@@ -33,6 +33,7 @@ autocmd! BufNewFile *.c 0r $HOME/.config/nvim/template/c.txt
 autocmd! BufNewFile *.java 0r $HOME/.config/nvim/template/java.txt
 autocmd! BufNewFile *.sh 0r $HOME/.config/nvim/template/sh.txt
 autocmd! BufNewFile *.scala 0r $HOME/.config/nvim/template/scala.txt
+autocmd! BufNewFile *.md 0r $HOME/.config/nvim/template/md.txt
 
 "" 折りたたみを有効
 set foldenable
