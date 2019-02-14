@@ -117,6 +117,9 @@ hook_add = '''
     \   'markdown': ['textlint'],
     \   'css': ['stylelint'],
     \}
+    let b:ale_fixers = {
+    \   'javascript': ['prettier', 'eslint', 'eslint-plugin-vue']
+    \}
     let g:ale_statusline_format = ['E%d', 'W%d', 'ok']
     let g:ale_set_loclist = 0
     let g:ale_set_quickfix = 1

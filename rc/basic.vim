@@ -20,6 +20,8 @@ set wildmenu
 set undofile
 set undodir=$HOME/.cache/nvim/undo
 
+set encoding=utf-8
+set ambiwidth=double
 set fileencodings=utf-8
 
 set laststatus=2

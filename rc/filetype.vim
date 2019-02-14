@@ -116,7 +116,7 @@ function! s:setRubyOnly()
 endfunction
 
 " Vue
-autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
+autocmd BufRead,BufNewFile *.vue setlocal filetype=vue
 autocmd MyAutoCmd FileType vue call s:setVueOnly()
 function! s:setVueOnly()
   set expandtab

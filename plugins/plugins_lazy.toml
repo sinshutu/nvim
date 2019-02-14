@@ -45,6 +45,12 @@ source ~/.config/nvim/plugins/neosnippet.rc.vim
 '''
 
 [[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+on_event = 'InsertCharPre'
+on_ft = 'snippet'
+on_i  = 1
+
+[[plugins]]
 repo = 'Shougo/context_filetype.vim'
 
 # html
@@ -110,12 +116,21 @@ on_ft = 'rust'
 
 # vue
 [[plugins]]
+repo = 'posva/vim-vue'
+on_ft = ['js', 'vue']
+
+[[plugins]]
 repo = 'Quramy/tsuquyomi'
 on_ft = ['js', 'vue']
 
 [[plugins]]
 repo = 'Quramy/tsuquyomi-vue'
 on_ft = ['js', 'vue']
+
+# typescript
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+on_ft = ['typescript']
 
 # json syntax
 [[plugins]]
