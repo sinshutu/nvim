@@ -146,3 +146,10 @@ repo = 'airblade/vim-gitgutter'
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'davidpdrsn/vim-notable'
+hook_add = '''
+  let g:notable_notes_folder = "~/src/notable.data/notes/"
+  noremap <leader>sb :call notable#open_notes_file()<cr>
+'''
