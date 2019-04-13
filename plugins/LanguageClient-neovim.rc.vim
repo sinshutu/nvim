@@ -1,10 +1,8 @@
 set hidden
 
-
+" \ 'ruby': ['solargraph', 'stdio'],
 let g:LanguageClient_serverCommands = {
     \ 'vue': ['vls'],
-    \ 'html': [],
-    \ 'css': [],
     \ 'javasctript': ['javascript-typescript-langserver'],
     \ }
 

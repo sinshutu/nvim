@@ -148,8 +148,12 @@ on_ft = 'toml'
 [[plugins]]
 repo = 'gabrielelana/vim-markdown'
 on_ft = ['markdown','md']
-hook_add = '''
-'''
+
+# review
+[[plugins]]
+repo = 'moro/vim-review'
+on_ft = ['review']
+
 
 # terraform
 [[plugins]]
