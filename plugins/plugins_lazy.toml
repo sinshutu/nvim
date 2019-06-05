@@ -162,3 +162,9 @@ on_ft = ['terraform']
 hook_add = '''
     let g:terraform_align=1
 '''
+
+# UML
+
+[[plugins]]
+repo = 'aklt/plantuml-syntax'
+on_ft = ['plantuml']
