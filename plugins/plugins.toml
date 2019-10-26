@@ -170,6 +170,9 @@ repo = 'airblade/vim-gitgutter'
 repo = 'tpope/vim-fugitive'
 
 [[plugins]]
+repo = 'tpope/vim-rhubarb'
+
+[[plugins]]
 repo = 'davidpdrsn/vim-notable'
 hook_add = '''
   let g:notable_notes_folder = "~/src/notable.data/notes/"
