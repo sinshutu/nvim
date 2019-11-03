@@ -38,7 +38,19 @@ hook_add = '''
     nnoremap <silent><buffer><expr> p       denite#do_map('do_action', 'preview')
     nnoremap <silent><buffer><expr> q       denite#do_map('quit')
   endfunction
+
+  " Change denite default options
+  let s:denite_win_width_percent = 0.85
+  let s:denite_win_height_percent = 0.7
+  call denite#custom#option('default', {
+      \ 'split': 'floating',
+      \ 'winwidth': float2nr(&columns * s:denite_win_width_percent),
+      \ 'wincol': float2nr((&columns - (&columns * s:denite_win_width_percent)) / 2),
+      \ 'winheight': float2nr(&lines * s:denite_win_height_percent),
+      \ 'winrow': float2nr((&lines - (&lines * s:denite_win_height_percent)) / 2),
+      \ })
 '''
+
 hook_post_source = '''
   call denite#custom#var('file_rec', 'command', ['rg', '--files', '--glob', '!.git', ''])
   call denite#custom#var('grep', 'command', ['rg'])
