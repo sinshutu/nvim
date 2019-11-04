@@ -126,12 +126,6 @@ hook_add = '''
 repo = 'tpope/vim-surround'
 
 [[plugins]]
-repo = 'junegunn/vim-easy-align'
-hook_add = '''
-vmap <Enter> <Plug>(EasyAlign)
-'''
-
-[[plugins]]
 repo = 'tomtom/tcomment_vim'
 
 # lint
@@ -160,17 +154,6 @@ hook_add = '''
     nmap <silent> <C-n> <Plug>(ale_next_wrap)
 '''
 
-# test
-[[plugins]]
-repo = 'tpope/vim-dispatch'
-
-[[plugins]]
-repo = 'janko-m/vim-test'
-depends = ['vim-dispatch']
-hook_add = '''
-let g:test#strategy = 'dispatch'
-'''
-
 # git
 [[plugins]]
 repo = 'rhysd/committia.vim'
@@ -183,10 +166,3 @@ repo = 'tpope/vim-fugitive'
 
 [[plugins]]
 repo = 'tpope/vim-rhubarb'
-
-[[plugins]]
-repo = 'davidpdrsn/vim-notable'
-hook_add = '''
-  let g:notable_notes_folder = "~/src/notable.data/notes/"
-  noremap <leader>sb :call notable#open_notes_file()<cr>
-'''
