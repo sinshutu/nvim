@@ -5,7 +5,7 @@ endif
 
 let s:dein_dir = '~/.config/nvim/.'
 
-set runtimepath+=~/.config/nvim/./repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.config/nvim/repos/github.com/Shougo/dein.vim
 
 " Load Plugins:
 if dein#load_state(s:dein_dir)
