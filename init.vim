@@ -1,8 +1,9 @@
-"dein Scripts-----------------------------
+" Be iMproved
 if &compatible
-  set nocompatible               " Be iMproved
+  set nocompatible
 endif
 
+" Start dein scripts -----------------------------
 let s:dein_dir = '~/.config/nvim/.'
 
 set runtimepath+=~/.config/nvim/repos/github.com/Shougo/dein.vim
@@ -36,7 +37,7 @@ if dein#check_install()
   call dein#install()
 endif
 
-"End dein Scripts-------------------------
+" End dein scripts -------------------------------
 
 " Load Settings:
 runtime! rc/*.vim
