@@ -28,6 +28,7 @@ endif
 " Default Settings:
 filetype plugin indent on
 syntax enable
+colorscheme onedark
 set autoindent
 set expandtab
 set tabstop=4

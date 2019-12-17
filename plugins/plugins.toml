@@ -70,12 +70,22 @@ add_hook = '''
     \ 'default' : ''
   \ }
 '''
+# Color {{{
+[[plugins]]
+repo = 'joshdick/onedark.vim'
+hook_add = '''
+  let g:onedark_termcolors=256
+  let g:onedark_hide_endofbuffer=1
+  let g:onedark_terminal_italics=1
+'''
+# }}}
+
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
 hook_add = '''
     let g:lightline = {
-    \ 'colorscheme': 'wombat',
+    \ 'colorscheme': 'onedark',
     \ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
     \             [ 'readonly', 'filename', 'modified' ],
