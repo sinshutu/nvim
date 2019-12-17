@@ -79,12 +79,13 @@ hook_add = '''
     \ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
     \             [ 'readonly', 'filename', 'modified' ],
-    \             [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ] ],
+    \             [ 'coc_status', 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_ok' ] ],
     \   'right': [ [ 'lineinfo' ],
     \              [ 'percent' ],
     \              [ 'gitbranch', 'fileformat', 'fileencoding', 'filetype' ] ]
     \ },
     \ 'component_function': {
+    \   'coc_status': 'coc#status',
     \   'gitbranch': 'fugitive#head',
     \ },
     \ }
@@ -109,6 +110,17 @@ let g:lightline.component_type = {
 '''
 
 [[plugins]]
+repo = 'neoclide/coc.nvim'
+rev = 'release'
+on_i = 1
+merged = '0'
+hook_add = '''
+nmap <silent> <space>h :<C-u>call CocAction('doHover')<cr>
+nmap <silent> <space>d <Plug>(coc-definition)
+nmap <silent> <space>r <Plug>(coc-references)
+'''
+
+[[plugins]]
 repo = 'vim-jp/vimdoc-ja'
 
 [[plugins]]
@@ -116,8 +128,6 @@ repo = 'Lokaltog/vim-easymotion'
 hook_add = '''
     map <Space>l <Plug>(easymotion-lineforward)
     map <Space>j <Plug>(easymotion-j)
-    map <Space>k <Plug>(easymotion-k)
-    map <Space>h <Plug>(easymotion-linebackward)
     map <Space>w <Plug>(easymotion-bd-f)
     map <Space>w <Plug>(easymotion-overwin-f)
 '''

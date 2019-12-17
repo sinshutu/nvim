@@ -1,0 +1,20 @@
+{
+    "suggest.noselect": true,
+    "suggest.preferCompleteThanJumpPlaceholder": true,
+    "coc.preferences.diagnostic.displayByAle": true,
+    "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+    "languageserver": {
+        "dockerfile": {
+            "command": "docker-langserver",
+            "filetypes": ["dockerfile"],
+            "args": ["--stdio"]
+        },
+        "ruby": {
+            "command": "solargraph",
+            "rootPatterns": [".solargraph.yml"],
+            "filetypes": ["rb", "rake"],
+            "solargraph.hover": true
+        }
+    },
+    "python.jediEnabled": false
+}
