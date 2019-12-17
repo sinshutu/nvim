@@ -59,17 +59,6 @@ hook_post_source = '''
   call denite#custom#var('grep', 'default_opts', ['rg', '--files', '--glob', '!.git', ''])
 '''
 
-[[plugins]]
-repo = 'Shougo/neocomplcache'
-add_hook = '''
-  let g:acp_enableAtStartup = 0
-  let g:neocomplcache_enable_at_startup = 1
-  let g:neocomplcache_enable_smart_case = 1
-  let g:neocomplcache_min_syntax_length = 3
-  let g:neocomplcache_dictionary_filetype_lists = {
-    \ 'default' : ''
-  \ }
-'''
 # Color {{{
 [[plugins]]
 repo = 'joshdick/onedark.vim'
