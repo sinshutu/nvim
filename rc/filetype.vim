@@ -127,4 +127,15 @@ function! s:setVueOnly()
   syntax sync fromstart
 endfunction
 
+" Yaml
+autocmd BufRead,BufNewFile *.{yml,yaml} setlocal filetype=yaml
+autocmd MyAutoCmd FileType yaml call s:setYamlOnly()
+function! s:setYamlOnly()
+  set expandtab
+  set tabstop=2
+  set shiftwidth=2
+  set softtabstop=2
+  set autoindent
+endfunction
+
 au FileType qf nnoremap <silent><buffer>q :quit<CR>
