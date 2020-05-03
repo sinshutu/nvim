@@ -127,6 +127,10 @@ on_ft = ['js', 'vue']
 repo = 'Quramy/tsuquyomi-vue'
 on_ft = ['js', 'vue']
 
+[[plugins]]
+repo = 'digitaltoad/vim-pug'
+on_ft = ['pug', 'vue']
+
 # typescript
 [[plugins]]
 repo = 'leafgarland/typescript-vim'
