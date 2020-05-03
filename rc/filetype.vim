@@ -46,6 +46,17 @@ function! s:setJavascriptOnly()
   set autoindent
 endfunction
 
+" TypeScript
+autocmd MyAutoCmd FileType typescript call s:setTypeScriptOnly()
+function! s:setTypeScriptOnly()
+  set foldlevel=1
+  set foldnestmax=99
+  set tabstop=2
+  set shiftwidth=2
+  set softtabstop=2
+  set autoindent
+endfunction
+
 " tex
 autocmd MyAutoCmd FileType tex call s:setTexOnly()
 function! s:setTexOnly()
