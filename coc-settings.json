@@ -16,5 +16,6 @@
             "filetypes": ["rb", "rake"]
         }
     },
-    "python.jediEnabled": false
+    "python.jediEnabled": false,
+    "java.home": "~/.asdf/installs/java/openjdk-15"
 }
