@@ -3,7 +3,6 @@
     "suggest.preferCompleteThanJumpPlaceholder": true,
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
     "solargraph.diagnostics": true,
-    "solargraph.hover": true,
     "languageserver": {
         "dockerfile": {
             "command": "docker-langserver",
