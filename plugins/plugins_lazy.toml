@@ -78,13 +78,13 @@ on_ft = '[python,cython]'
 # on_ft = 'haskell'
 
 # ruby
-# [[plugins]]
-# repo = 'osyo-manga/vim-monster'
-# on_ft = 'ruby'
+[[plugins]]
+repo = 'kana/vim-textobj-user'
 
-# [[plugins]]
-# repo = 'vim-rails'
-# on_ft = '[ruby]'
+[[plugins]]
+repo = 'rhysd/vim-textobj-ruby'
+depends = ['neosnippet-snippets', 'context_filetype.vim']
+on_ft = '[ruby]'
 
 # rust
 [[plugins]]
