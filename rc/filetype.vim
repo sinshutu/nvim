@@ -33,6 +33,7 @@ function! s:setHtmlOnly()
   set tabstop=2
   set shiftwidth=2
   set softtabstop=2
+  set isk+=-
 endfunction
 
 " javascript
@@ -135,6 +136,7 @@ function! s:setVueOnly()
   set shiftwidth=2
   set softtabstop=2
   set autoindent
+  set isk+=-
   syntax sync fromstart
 endfunction
 
