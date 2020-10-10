@@ -3,18 +3,6 @@
     "suggest.preferCompleteThanJumpPlaceholder": true,
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
     "solargraph.diagnostics": true,
-    "languageserver": {
-        "dockerfile": {
-            "command": "docker-langserver",
-            "filetypes": ["dockerfile"],
-            "args": ["--stdio"]
-        },
-        "ruby": {
-            "command": "solargraph",
-            "rootPatterns": [".solargraph.yml"],
-            "filetypes": ["rb", "rake"]
-        }
-    },
     "python.jediEnabled": false,
     "java.home": "~/.asdf/installs/java/openjdk-15"
 }
