@@ -37,7 +37,10 @@ repo = 'Shougo/context_filetype.vim'
 # html
 [[plugins]]
 repo = 'mattn/emmet-vim'
-on_ft = 'html'
+on_ft = '[html,md]'
+hook_add = '''
+autocmd FileType html,css,markdown EmmetInstall
+'''
 
 # python
 [[plugins]]
