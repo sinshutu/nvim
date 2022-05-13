@@ -12,3 +12,6 @@ nmap <F6> <ESC>i<C-R>=strftime("%Y/%m/%d")<CR><CR>
 "
 nmap <silent> <C-k> :cp<CR>
 nmap <silent> <C-j> :cn<CR>
+nnoremap <S-Tab> <<
+nnoremap <Tab> >>
+inoremap <S-Tab> <C-d>

@@ -132,11 +132,6 @@ hook_add = '''
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
 
-# markdown
-[[plugins]]
-repo = 'gabrielelana/vim-markdown'
-on_ft = ['markdown','md']
-
 # review
 [[plugins]]
 repo = 'moro/vim-review'
