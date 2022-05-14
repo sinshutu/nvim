@@ -87,7 +87,7 @@ hook_add = '''
     \ },
     \ 'component_function': {
     \   'coc_status': 'coc#status',
-    \   'gitbranch': 'fugitive#head',
+    \   'gitbranch': 'FugitiveHead',
     \ },
     \ }
 '''
