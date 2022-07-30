@@ -3,5 +3,4 @@ let g:coc_global_extensions = [
       \, 'coc-docker'
       \, 'coc-solargraph'
       \, 'coc-eslint'
-      \, 'coc-vetur'
       \ ]
