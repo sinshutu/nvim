@@ -16,20 +16,16 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'Shougo/neosnippet.vim'
+repo  = 'Shougo/neosnippet'
 depends = ['neosnippet-snippets', 'context_filetype.vim']
-on_event = 'InsertCharPre'
-on_ft = 'snippet'
-on_i  = 1
+on_i = 1
+on_ft = ['snippet']
 hook_source = '''
 source ~/.config/nvim/plugins/neosnippet.rc.vim
 '''
 
 [[plugins]]
-repo = 'Shougo/neosnippet-snippets'
-on_event = 'InsertCharPre'
-on_ft = 'snippet'
-on_i  = 1
+repo  = 'Shougo/neosnippet-snippets'
 
 [[plugins]]
 repo = 'Shougo/context_filetype.vim'
