@@ -4,6 +4,7 @@
   "coc.preferences.currentFunctionSymbolAutoUpdate": true,
   "solargraph.diagnostics": true,
   "solargraph.formatting": true,
-  "python.jediEnabled": false,
-  "java.home": "~/.asdf/installs/java/openjdk-15"
+  "java.home": "~/.asdf/installs/java/openjdk-15",
+  "eslint.autoFixOnSave": true,
+  "javascript.suggestionActions.enabled": false
 }

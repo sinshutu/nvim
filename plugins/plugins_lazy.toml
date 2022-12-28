@@ -82,7 +82,7 @@ repo = 'kana/vim-textobj-user'
 
 [[plugins]]
 repo = 'rhysd/vim-textobj-ruby'
-depends = ['neosnippet-snippets', 'context_filetype.vim']
+depends = ['kana/vim-textobj-user', 'neosnippet-snippets', 'context_filetype.vim']
 on_ft = '[ruby]'
 
 # rust
