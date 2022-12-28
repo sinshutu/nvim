@@ -68,6 +68,9 @@ function! s:setTexOnly()
 endfunction
 augroup texfile
   autocmd BufRead,BufNewFile *.tex set filetype=tex
+  set tabstop=2
+  set shiftwidth=2
+  set softtabstop=2
   let md_to_latex  = "pandoc --from=markdown --to=latex"
   autocmd Filetype tex let &formatprg=md_to_latex
 augroup END
@@ -99,9 +102,9 @@ endfunction
 autocmd MyAutoCmd FileType sh call s:setShellScriptOnly()
 autocmd MyAutoCmd FileType zsh call s:setShellScriptOnly()
 function! s:setShellScriptOnly()
-  set tabstop=4
-  set shiftwidth=4
-  set softtabstop=4
+  set tabstop=2
+  set shiftwidth=2
+  set softtabstop=2
 endfunction
 
 " Scala
