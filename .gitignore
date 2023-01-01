@@ -1,10 +1,6 @@
-.dein/
-.plugins/
 repos/
 rollbacks/
-temp/
 .cache/
 .netrwhist
-merged
 cache_nvim
 state_nvim.vim
