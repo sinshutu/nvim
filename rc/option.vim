@@ -1,0 +1,11 @@
+set autoindent
+set smartindent
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set undofile
+set undodir=$HOME/.cache/nvim/undo
+set clipboard=unnamedplus
+set encoding=utf-8
+set fileencodings=utf-8
