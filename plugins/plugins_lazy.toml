@@ -51,34 +51,10 @@ on_ft = '[python,cython]'
 repo = 'Vimjas/vim-python-pep8-indent'
 on_ft = '[python,cython]'
 
-# golang
-# [[plugins]]
-# repo = 'fatih/vim-go'
-# on_ft = 'go'
-# hook_add = '''
-# set rtp+=/home/suzuki/src/github.com/nsf/gocode/vim
-# '''
-
-# haskell
-# [[plugins]]
-# repo = 'neovimhaskell/haskell-vim'
-# on_ft = 'haskell'
-#
-# [[plugins]]
-# repo = 'ujihisa/neco-ghc'
-# on_ft = 'haskell'
-# hook_add = '''
-#   let g:haskellmode_completion_ghc = 0
-#   autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
-# '''
-#
-# [[plugins]]
-# repo = 'itchyny/vim-haskell-indent'
-# on_ft = 'haskell'
-
 # ruby
 [[plugins]]
 repo = 'kana/vim-textobj-user'
+on_ft = '[ruby]'
 
 [[plugins]]
 repo = 'rhysd/vim-textobj-ruby'
@@ -143,7 +119,6 @@ hook_add = '''
 '''
 
 # UML
-
 [[plugins]]
 repo = 'aklt/plantuml-syntax'
 on_ft = ['plantuml']
