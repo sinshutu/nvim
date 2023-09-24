@@ -5,6 +5,7 @@ set wildmenu
 set incsearch
 set nohlsearch
 set ignorecase
+set smartcase
 
 " 折りたたみ設定
 set foldmethod=manual
