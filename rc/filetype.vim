@@ -82,12 +82,13 @@ function! s:setShellScriptOnly()
   set foldlevel=1
 endfunction
 
-"template
-autocmd! BufNewFile *.html 0r $HOME/.config/nvim/template/html.txt
-autocmd! BufNewFile *.py 0r $HOME/.config/nvim/template/py.txt
-autocmd! BufNewFile *.c 0r $HOME/.config/nvim/template/c.txt
-autocmd! BufNewFile *.java 0r $HOME/.config/nvim/template/java.txt
-autocmd! BufNewFile *.sh 0r $HOME/.config/nvim/template/sh.txt
-autocmd! BufNewFile *.scala 0r $HOME/.config/nvim/template/scala.txt
-autocmd! BufNewFile *.md 0r $HOME/.config/nvim/template/md.txt
-autocmd! BufNewFile *.rb 0r $HOME/.config/nvim/template/ruby.txt
+" template
+autocmd! BufNewFile *.html r $HOME/.config/nvim/template/html.txt|0d
+autocmd! BufNewFile *.py r $HOME/.config/nvim/template/py.txt|0d
+autocmd! BufNewFile *.c r $HOME/.config/nvim/template/c.txt|0d
+autocmd! BufNewFile *.java r $HOME/.config/nvim/template/java.txt|0d
+autocmd! BufNewFile *.sh r $HOME/.config/nvim/template/sh.txt|0d
+autocmd! BufNewFile *.scala r $HOME/.config/nvim/template/scala.txt|0d
+autocmd! BufNewFile *.md r $HOME/.config/nvim/template/md.txt|0d
+autocmd! BufNewFile *.rb r $HOME/.config/nvim/template/ruby.txt|0d
+autocmd! BufNewFile *.go r $HOME/.config/nvim/template/go.txt|0d
