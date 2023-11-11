@@ -104,12 +104,6 @@ hook_add = '''
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
 
-# review
-[[plugins]]
-repo = 'moro/vim-review'
-on_ft = ['review']
-
-
 # terraform
 [[plugins]]
 repo = 'hashivim/vim-terraform'
@@ -118,7 +112,7 @@ hook_add = '''
     let g:terraform_align=1
 '''
 
-# UML
+# Svelte
 [[plugins]]
-repo = 'aklt/plantuml-syntax'
-on_ft = ['plantuml']
+repo = 'evanleck/vim-svelte'
+on_ft = ['svelte']
