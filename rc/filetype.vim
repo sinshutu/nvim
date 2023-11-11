@@ -26,7 +26,7 @@ function! s:setPythonOnly()
 endfunction
 
 " html
-autocmd MyAutoCmd BufNewFile,BufRead *.{html,xml,erb} set filetype=html
+autocmd MyAutoCmd BufNewFile,BufRead *.{html,xml,erb,svelte} set filetype=html
 autocmd MyAutoCmd FileType html call s:setHtmlOnly()
 function! s:setHtmlOnly()
   set isk+=-
