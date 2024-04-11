@@ -69,36 +69,72 @@ hook_add = '''
     \ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
     \             [ 'readonly', 'filename', 'modified' ],
-    \             [ 'coc_info', 'coc_hints', 'coc_errors', 'coc_warnings', 'coc_ok' ],
-    \             [ 'coc_status' ] ],
+    \             [ 'lsp_info', 'lsp_hints', 'lsp_errors', 'lsp_warnings', 'lsp_ok' ],
+    \             [ 'lsp_status' ] ],
     \   'right': [ [ 'lineinfo' ],
     \              [ 'percent' ],
     \              [ 'gitbranch', 'fileformat', 'fileencoding', 'filetype' ] ]
     \ },
     \ 'component_function': {
-    \   'coc_status': 'coc#status',
+    \   'lsp_status': 'lsp#get_server_status',
     \   'gitbranch': 'FugitiveHead',
     \ },
     \ }
 '''
 
+# [[plugins]]
+# repo = 'josa42/vim-lightline-coc'
+# depends = ['lightline.vim', 'coc.nvim']
+# hook_add = '''
+#     let g:lightline#coc#indicator_errors = 'X'
+#     call lightline#coc#register()
+# '''
+
 [[plugins]]
-repo = 'josa42/vim-lightline-coc'
-depends = ['lightline.vim', 'coc.nvim']
+repo = 'josa42/nvim-lightline-lsp'
+depends = ['lightline.vim', 'vim-lsp']
 hook_add = '''
-    let g:lightline#coc#indicator_errors = 'X'
-    call lightline#coc#register()
+    call lightline#lsp#register()
+'''
+
+
+# [[plugins]]
+# repo = 'neoclide/coc.nvim'
+# rev = 'release'
+# merged = '0'
+# hook_add = '''
+# nmap <silent> <space>h :<C-u>call CocAction('doHover')<cr>
+# nmap <silent> <space>d <Plug>(coc-definition)
+# nmap <silent> <space>r <Plug>(coc-references)
+# '''
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+hook_add = '''
+nmap <silent> <space>h <Plug>(lsp-hover)
+nmap <silent> <space>d <Plug>(lsp-peek-definition)
+nmap <silent> <space>D <Plug>(lsp-definition)
+nmap <silent> <space>t <Plug>(lsp-peek-type-definition)
+nmap <silent> <space>T <Plug>(lsp-type-definition)
+nmap <silent> <space>r <Plug>(lsp-references)
+nmap <silent> <space>a <plug>(lsp-code-action-float)
+nmap <silent> <space>rn <plug>(lsp-rename)
 '''
 
 [[plugins]]
-repo = 'neoclide/coc.nvim'
-rev = 'release'
-merged = '0'
-hook_add = '''
-nmap <silent> <space>h :<C-u>call CocAction('doHover')<cr>
-nmap <silent> <space>d <Plug>(coc-definition)
-nmap <silent> <space>r <Plug>(coc-references)
-'''
+repo = 'prabirshrestha/asyncomplete.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+depends = ['vim-lsp', 'asyncomplete.vim']
+
+[[plugins]]
+repo = 'mattn/vim-lsp-settings'
+depends = ['vim-lsp']
+
+# [[plugins]]
+# repo = 'thomasfaingnaert/vim-lsp-neosnippet'
+# depends = ['vim-lsp', 'neosnippets']
 
 [[plugins]]
 repo = 'vim-jp/vimdoc-ja'

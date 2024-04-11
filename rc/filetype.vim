@@ -89,11 +89,8 @@ function! s:setShellScriptOnly()
 endfunction
 
 " golang
-autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
-autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.formatDocument')
-autocmd FileType go nmap gtj :CocCommand go.tags.add json<cr>
-autocmd FileType go nmap gty :CocCommand go.tags.add yaml<cr>
-autocmd FileType go nmap gtx :CocCommand go.tags.clear<cr>
+autocmd BufWritePre *.go :silent execute('LspCodeActionSync source.organizeImports')
+autocmd BufWritePre *.go :silent execute('LspDocumentFormatSync')
 autocmd MyAutoCmd FileType go call s:setGoLangOnly()
 function! s:setGoLangOnly()
   setlocal ts=2 sts=2 noexpandtab
