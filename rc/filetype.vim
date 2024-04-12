@@ -39,6 +39,12 @@ function! s:setJavascriptOnly()
   set foldnestmax=99
 endfunction
 
+" StyleSheet
+autocmd MyAutoCmd BufNewFile,BufRead *.{css,pcss} set filetype=css
+autocmd MyAutoCmd FileType html call s:setStyleSheetOnly()
+function! s:setStyleSheetOnly()
+endfunction
+
 " TypeScript
 autocmd MyAutoCmd FileType typescript call s:setTypeScriptOnly()
 function! s:setTypeScriptOnly()

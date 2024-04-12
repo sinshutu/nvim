@@ -6,6 +6,7 @@ set incsearch
 set nohlsearch
 set ignorecase
 set smartcase
+set mouse-=a
 
 " 折りたたみ設定
 set foldmethod=manual
