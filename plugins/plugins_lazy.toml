@@ -61,6 +61,10 @@ repo = 'rhysd/vim-textobj-ruby'
 depends = ['kana/vim-textobj-user', 'neosnippet-snippets', 'context_filetype.vim']
 on_ft = '[ruby]'
 
+[[plugins]]
+repo = 'jlcrochet/vim-rbs'
+on_ft = '[ruby]'
+
 # rust
 [[plugins]]
 repo = 'rust-lang/rust.vim'
@@ -86,6 +90,11 @@ on_ft = ['js', 'vue']
 [[plugins]]
 repo = 'digitaltoad/vim-pug'
 on_ft = ['pug', 'vue']
+
+# javascript
+[[plugins]]
+repo = 'heavenshell/vim-jsdoc'
+on_ft = ['javascript']
 
 # typescript
 [[plugins]]
