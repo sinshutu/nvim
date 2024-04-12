@@ -4,7 +4,8 @@
   "coc.preferences.currentFunctionSymbolAutoUpdate": true,
   "solargraph.diagnostics": true,
   "solargraph.formatting": true,
-  "java.home": "~/.asdf/installs/java/openjdk-15",
+  "eslint.packageManager": "yarn",
+  "eslint.experimental.useFlatConfig": true,
   "eslint.autoFixOnSave": true,
-  "javascript.suggestionActions.enabled": false
+  "javascript.suggestionActions.enabled": true
 }
