@@ -83,11 +83,45 @@ hook_add = '''
 '''
 
 # [[plugins]]
-# repo = 'josa42/vim-lightline-coc'
-# depends = ['lightline.vim', 'coc.nvim']
+# repo = 'dense-analysis/ale'
 # hook_add = '''
-#     let g:lightline#coc#indicator_errors = 'X'
-#     call lightline#coc#register()
+# let g:ale_linters = {
+# \   'ruby': ['rubocop', 'brakeman', 'solargraph'],
+# \   'css': ['stylelint'],
+# \   'javascript': ['eslint', 'eslint-plugin-vue'],
+# \   'markdown': ['textlint'],
+# \   'python': ['pyflakes', 'pep8'],
+# \   'review': ['textlint'],
+# \   'tex': ['textlint'],
+# \}
+# let g:ale_fixers = {
+# \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+# \   'ruby': ['rubocop'],
+# \   'javascript': ['eslint'],
+# \   'review': ['textlint'],
+# \   'vue': ['eslint'],
+# \}
+# let g:ale_completion_enabled = 1
+# let g:ale_statusline_format = ['E%d', 'W%d', 'ok']
+# let g:ale_set_loclist = 0
+# let g:ale_set_quickfix = 1
+# '''
+
+# repo = 'maximbaz/lightline-ale'
+# depends = ['lightline.vim', 'ale']
+# hook_add = '''
+# let g:lightline.component_expand = {
+#   \  'linter_checking': 'lightline#ale#checking',
+#   \  'linter_warnings': 'lightline#ale#warnings',
+#   \  'linter_errors': 'lightline#ale#errors',
+#   \  'linter_ok': 'lightline#ale#ok',
+#   \ }
+# let g:lightline.component_type = {
+#   \     'linter_checking': 'left',
+#   \     'linter_warnings': 'warning',
+#   \     'linter_errors': 'error',
+#   \     'linter_ok': 'left',
+#   \ }
 # '''
 
 [[plugins]]
@@ -97,20 +131,10 @@ hook_add = '''
     call lightline#lsp#register()
 '''
 
-
-# [[plugins]]
-# repo = 'neoclide/coc.nvim'
-# rev = 'release'
-# merged = '0'
-# hook_add = '''
-# nmap <silent> <space>h :<C-u>call CocAction('doHover')<cr>
-# nmap <silent> <space>d <Plug>(coc-definition)
-# nmap <silent> <space>r <Plug>(coc-references)
-# '''
-
 [[plugins]]
 repo = 'prabirshrestha/vim-lsp'
 hook_add = '''
+let g:lsp_settings_filetype_vue = ['typescript-language-server', 'volar-server']
 nmap <silent> <space>h <Plug>(lsp-hover)
 nmap <silent> <space>d <Plug>(lsp-peek-definition)
 nmap <silent> <space>D <Plug>(lsp-definition)
@@ -119,6 +143,15 @@ nmap <silent> <space>T <Plug>(lsp-type-definition)
 nmap <silent> <space>r <Plug>(lsp-references)
 nmap <silent> <space>a <plug>(lsp-code-action-float)
 nmap <silent> <space>rn <plug>(lsp-rename)
+
+augroup LspEFM
+  au!
+  autocmd User lsp_setup call lsp#register_server({
+      \ 'name': 'efm-langserver',
+      \ 'cmd': {server_info->['efm-langserver']},
+      \ 'allowlist': ['javascript', 'vue'],
+      \ })
+augroup END
 '''
 
 [[plugins]]
