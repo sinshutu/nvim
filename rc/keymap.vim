@@ -11,3 +11,8 @@ nmap <silent> <C-n> <Plug>(lsp-next-diagnostic)
 
 " Git
 nmap <silent> <C-g>b :Git blame<CR>
+
+
+" shortcut
+" eslint
+nmap <silent> <C-l>f :!./node_modules/.bin/eslint % --fix<CR>
