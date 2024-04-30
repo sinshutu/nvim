@@ -74,23 +74,6 @@ on_ft = 'rust'
 repo = 'sebastianmarkow/deoplete-rust'
 on_ft = 'rust'
 
-# vue
-[[plugins]]
-repo = 'posva/vim-vue'
-on_ft = ['js', 'vue']
-
-[[plugins]]
-repo = 'Quramy/tsuquyomi'
-on_ft = ['js', 'vue']
-
-[[plugins]]
-repo = 'Quramy/tsuquyomi-vue'
-on_ft = ['js', 'vue']
-
-[[plugins]]
-repo = 'digitaltoad/vim-pug'
-on_ft = ['pug', 'vue']
-
 # javascript
 [[plugins]]
 repo = 'heavenshell/vim-jsdoc'
